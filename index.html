@@ -6,8 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Habit Tracker</title>
   <style>
-    .red-bg {
-      background-color: red;
+    .purple-bg {
+      background-color: rgb(203, 151, 244);
+      color: white;
+    }
+    .green-bg {
+      background-color: rgb(152, 212, 192);
       color: white;
     }
 
@@ -27,13 +31,20 @@
   You got this!!
 
   <header><h2 id="secondary-title">Habits: </h2></header>
-  <ol id="habit-list" class="red-bg visible">
+
+  <section id="archived-list-section" class="invisible">
+    <h3>Completed Habits</h3>
+    <ul class="green-bg visible">
+      <li>Completed Habit 1</li>
+    </ul>
+  </section>
+  
+  <ol id="habit-list">
     <li class="list-item"><i>Example Habit Here</i></li>
-    <li class="list-item"><i>Example Habit Here2</i></li>
   </ol>
 
   <button id="add-habit-btn">Add New Habit!</button>
-  <button id="toggle-vis-btn">Toggle Visibiity</button>
+  <button id="toggle-vis-btn">Show Completed List</button>
   
 </body>
 </html>
