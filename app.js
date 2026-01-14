@@ -44,5 +44,7 @@ toggleBtn.addEventListener('click', () => {
   archivedListSn.classList.toggle('invisible');
 })
 
+const cb = document.querySelectorAll('.checkbox')
+
 // Notes
 // Toggle visibility button would be good to see past to-dos
