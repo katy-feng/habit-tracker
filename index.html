@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Habit Tracker</title>
+  <style>
+    .red-bg {
+      background-color: red;
+      color: white;
+    }
+
+    .visible {
+      display: block;
+    }
+
+    .invisible {
+      display: none;
+    }
+
+  </style>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -12,12 +27,13 @@
   You got this!!
 
   <header><h2 id="secondary-title">Habits: </h2></header>
-  <ol id="habit-list">
+  <ol id="habit-list" class="red-bg visible">
     <li class="list-item"><i>Example Habit Here</i></li>
     <li class="list-item"><i>Example Habit Here2</i></li>
   </ol>
 
   <button id="add-habit-btn">Add New Habit!</button>
+  <button id="toggle-vis-btn">Toggle Visibiity</button>
   
 </body>
 </html>
