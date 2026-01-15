@@ -1,5 +1,9 @@
 const addHabitBtn = document.getElementById('add-habit-btn');
+const removeHabitBtn = document.getElementById('remove-habit-btn');
+const toggleBtn = document.getElementById('toggle-vis-btn');
+
 const EXAMPLE_HABIT_TEXT = 'Example Habit Here';
+
 let habitList = document.getElementById('habit-list');
 let archivedListSn = document.getElementById('archived-list-section')
 
@@ -37,14 +41,18 @@ const appendUserHabit = function () {
 
 }
 
-addHabitBtn.addEventListener('click', appendUserHabit);
+const removeUserHabit = () => {
+  lastChild = habitList.lastElementChild;
+  habitList.removeChild(lastChild);
+}
 
-const toggleBtn = document.getElementById('toggle-vis-btn');
+addHabitBtn.addEventListener('click', appendUserHabit);
+removeHabitBtn.addEventListener('click', removeUserHabit);
+
 toggleBtn.addEventListener('click', () => {
   archivedListSn.classList.toggle('invisible');
 })
 
-const cb = document.querySelectorAll('.checkbox')
 
 // Notes
 // Toggle visibility button would be good to see past to-dos
