@@ -15,7 +15,7 @@ const addCheckbox = (li) => {
 };
 
 const getUserHabit = function () {
-  let newHabit = prompt(`What is your new habit?`, "To start meditating");
+  let newHabit = prompt("What is your new habit?", "To start meditating");
   if (!newHabit) {
     return null;
   }
