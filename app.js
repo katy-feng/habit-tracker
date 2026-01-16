@@ -46,7 +46,7 @@ const removeUserHabit = () => {
 
   if (habitList.childElementCount === 0) {
     const entry = document.createElement("li");
-    entry.textContent = EXAMPLE_HABIT_TEXT;
+    entry.innerHTML = `<i>${EXAMPLE_HABIT_TEXT}</i>`;
     habitList.appendChild(entry);
   }
 };

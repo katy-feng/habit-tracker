@@ -30,7 +30,7 @@ body {
 }
 
 .cute-btn {
-  background-color: #c8ffb6;
+  background-color: #d1f1d1;
   color: #000000;
   border: none;
   border-radius: 999px; /* pill shape */
@@ -38,7 +38,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 4px 0 #9ae8a8;
+  box-shadow: 0 4px 0 #A9DDB1;
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
