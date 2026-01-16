@@ -43,6 +43,12 @@ const appendUserHabit = function () {
 const removeUserHabit = () => {
   lastChild = habitList.lastElementChild;
   habitList.removeChild(lastChild);
+
+  if (habitList.childElementCount === 0) {
+    const entry = document.createElement("li");
+    entry.textContent = EXAMPLE_HABIT_TEXT;
+    habitList.appendChild(entry);
+  }
 };
 
 addHabitBtn.addEventListener("click", appendUserHabit);

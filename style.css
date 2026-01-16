@@ -1,0 +1,52 @@
+body {
+    font-family: "Georgia", serif;
+    background-color: #fff7fb;
+    text-align: center;
+}
+
+.purple-bg {
+    background-color: rgb(203, 151, 244);
+    color: white;
+}
+
+.green-bg {
+    background-color: rgb(152, 212, 192);
+    color: white;
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
+.center-list {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-position: inside;
+}
+
+.cute-btn {
+  background-color: #c8ffb6;
+  color: #000000;
+  border: none;
+  border-radius: 999px; /* pill shape */
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #9ae8a8;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.cute-btn:hover {
+  transform: translateY(-2px);
+}
+
+.cute-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #e89aaa;
+}
