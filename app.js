@@ -51,12 +51,21 @@ const removeUserHabit = () => {
   }
 };
 
+const toggleStrikethrough = (cb, habitText) => {
+  if (cb.checked) {
+    habitText.style.textDecoration = 'line-through';
+  } else {
+    habitText.style.textDecoration = 'none';
+  }
+}
+
 addHabitBtn.addEventListener("click", appendUserHabit);
 removeHabitBtn.addEventListener("click", removeUserHabit);
 
 toggleBtn.addEventListener("click", () => {
   archivedListSn.classList.toggle("invisible");
 });
+
 
 // Notes
 // Toggle visibility button would be good to see past to-dos
